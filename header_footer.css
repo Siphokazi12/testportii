@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  font-family: "Playfair", serif;
+  color: rgb(20, 49, 124);
+  background-color: rgb(245, 245, 245);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(20, 49, 124);
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+
+  @media(width<=60em){
+    text-decoration: underline;
+    margin-top: 1rem;
+  }
+}
+
+a:hover {
+  color: rgb(97, 107, 131);
+}
+
+/* Header */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem ;
+
+  @media(width<=60em){
+  justify-content: center;
+  align-items: center;
+}
+}
+
+.logo img {
+  width: 40%;
+  height: auto;
+
+  @media(width<=60em){
+    display: none;
+  }
+}
+
+.nav-links {
+  font-size: 1.5rem;
+font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+
+  @media(width<=60em){
+    margin-top: 1rem;
+  }
+}
+
+.nav-pills {
+  list-style: none;
+  display: flex !important;
+  gap: 3rem ;
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(20, 49, 124);
+  padding: 1em;
+  margin-top: 1.5rem;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  text-align: center;
+}
+
+.nav-footer .nav-pills {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.nav-item-footer a {
+  font-size: clamp(1rem, 0.825rem + 0.875vw, 1.875rem);
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item-footer a:hover {
+  color: rgb(99, 117, 235);
+}
+
+.nav-footer img{
+  padding-top: 1em;
+}
+
+.nav-footer .nav-pills .nav-item-footer img{
+  width: 30%;
+  height: auto;
+  gap:0;
+}
